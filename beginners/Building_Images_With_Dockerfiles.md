@@ -53,7 +53,7 @@ Of course, you can use any other editor of your choice.
 ## Type this into our Dockerfile...
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:24.10
 RUN apt-get update
 RUN apt-get install figlet
 ```
@@ -235,7 +235,7 @@ We are going to change our Dockerfile to see how it affects the resulting image.
 Let's change our Dockerfile as follows!
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:24.10
 RUN apt-get update
 RUN ["apt-get", "install", "figlet"]
 ```
